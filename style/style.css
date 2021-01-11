@@ -1,0 +1,189 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Sawarabi+Mincho");
+
+html {
+  font-size: 15px;
+  line-height: 1.5;
+  font-family: "Sawarabi Mincho","Hiragino Mincho Pro","Yu Mincho",serif,sans-serif;
+  font-weight: 500;
+  overflow: hidden;
+}
+
+.wf-sawarabimincho { font-family: "Sawarabi Mincho"; }
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  height: 5.5em;
+  background-color: #f49c2d;
+  position: fixed;
+  display: none;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.5;
+}
+
+a:active {
+  opacity: 1;
+}
+
+.nav-inner ul{
+  display: inline-flex;
+  position: absolute;
+  right: 3em;
+  top: 2em;
+}
+
+.nav-inner li {
+  margin-left: 2em;
+  list-style-type: none;
+}
+
+.side-menu {
+  width: 13%;
+  background-color: #c4d700;
+  height: 100vh;
+
+}
+
+.logo {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 2em;
+}
+
+.logo img {
+  width: 100%;
+}
+
+.midashi {
+  width: 7em;
+  margin: 1em auto;
+  font-size: 14px;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.side-menu li {
+  color: #fff;
+  text-align: center;
+  display: block;
+  width: 4em;
+  margin: 0 auto;
+  margin-bottom: 1em;
+}
+
+.side-menu a {
+  font-weight: bold;
+}
+
+.side-menu-wrapper {
+  display: flex;
+  background-color: #fff6bf;
+}
+main {
+  flex-grow: 1;
+  text-align: center;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.main-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.main-inner h1 {
+  border-bottom: 5px solid #f49c2d;
+  max-width: 10em;
+  margin: 1em auto;
+  color: #f49c2d;
+}
+
+.sozai-area{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+}
+
+.item {
+  width: 10em;
+  margin: 2em 1em;
+  box-sizing: border-box;
+  height: 22em;
+  position: relative;
+}
+
+.item h2 {
+  color: #f49c2d;
+}
+
+.item img {
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-55%);
+  max-height: 10em;
+  width: auto;
+}
+
+.item a {
+  border-radius: 10px;
+  padding: 1em;
+  background-color: #f49c2d;
+  position: absolute;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.dummy {
+  height: 0;
+}
+
+footer {
+  background-color: #c4d700;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  bottom: 0;
+  height: 5%;
+}
+
+.footer-inner {
+  color: #fff;
+  font-size: 90%;
+  text-align: center;
+  margin-top: 0.5em;
+}
+
+@media screen and (max-width: 900px) {
+  .side-menu {
+    width: 20%;
+    height: 100vh;
+    background-color: #c4d700;
+  }
+  .side-menu h3 {
+    color: #fff;
+    width: 10em;
+    margin: 2em auto;
+    font-size: 14px;
+  }
+  .midashi {
+    font-size: 10px;
+  }
+}
